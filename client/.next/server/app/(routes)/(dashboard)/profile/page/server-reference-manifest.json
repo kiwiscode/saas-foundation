@@ -1,0 +1,16 @@
+{
+  "node": {
+    "40040156119713afcfdd30b86860da3c74a9bf6988": {
+      "workers": {
+        "app/(routes)/(dashboard)/profile/page": {
+          "moduleId": "[project]/.next-internal/server/app/(routes)/(dashboard)/profile/page/actions.js { ACTIONS_MODULE0 => \"[project]/server-actions/user.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(routes)/(dashboard)/profile/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

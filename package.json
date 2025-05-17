@@ -1,0 +1,23 @@
+{
+  "name": "trend-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.7.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.7.0"
+  },
+  "prisma": {
+    "schema": "./db/schema.prisma",
+    "seed": "node ./db/seed.js"
+  }
+}

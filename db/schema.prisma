@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model NewsletterSubscriber {
+    id             Int       @id @default(autoincrement())
+    email          String    @unique
+    name           String? // Optional name of the subscriber
+    createdAt      DateTime  @default(now())
+    status         String    @default("active") // "active", "unsubscribed", "bounced", etc.
+    source         String?   @default("website") // Source of subscription: "website", "popup", "blog", etc.
+    tags           String[] // Tags for segmentation
+    language       String? // Preferred language, e.g., "en", "de", "tr"
+    country        String? // Country of the subscriber, if available
+    city           String? // City of the subscriber, if available
+    consent        Boolean   @default(false) // Whether the user has given consent (GDPR/CCPA compliance)
+    unsubscribedAt DateTime? // Timestamp of when the user unsubscribed, if applicable
+}
+
+model Category {
+    id    Int          @id @default(autoincrement())
+    type  CategoryType @unique
+    posts Post[]
+}
+
+model Post {
+    id              Int      @id @default(autoincrement())
+    title           String
+    slug            String   @unique
+    postPublishDate DateTime
+    postAuthor      String
+
+    categoryId Int
+    category   Category @relation(fields: [categoryId], references: [id])
+
+    HeroSectionLandingPage HeroSectionLandingPage?
+}
+
+model HeroSectionLandingPage {
+    id     Int  @id @default(autoincrement())
+    postId Int  @unique
+    post   Post @relation(fields: [postId], references: [id])
+}
+
+enum CategoryType {
+    FILM
+    FASHION
+    MAGAZINE
+    POLITICS_CULTURE
+    ART
+    TRAVEL_LIFESTYLE
+}
