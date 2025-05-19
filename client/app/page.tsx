@@ -1,11 +1,14 @@
 "use client";
 
 import { RegisterForm } from "@/components/auth/RegisterForm";
+import { Marquee } from "@/components/ui/marquee";
 import { Switch } from "@/components/ui/switch";
 import { useUserType } from "@/context/UserTypeContext";
 
 export default function Home() {
   const { userType, setUserType } = useUserType();
+
+  console.log("user type:", userType);
   return (
     <>
       <div className="font-bold text-[14px] mb-[30px] mt-[90px] flex justify-center items-center gap-[8px]">
@@ -40,6 +43,8 @@ export default function Home() {
       <div className="flex gap-[12px] justify-center items-center pt-[40px]">
         <RegisterForm size="lg" />
       </div>
+
+      <Marquee />
     </>
   );
 }

@@ -10,6 +10,10 @@ const Navbar = () => {
         <div className="text-[40px] cursor-default">👾</div>
         <ul className="flex items-center list-none m-0 p-0 gap-[30px]">
           <li className="cursor-pointer">
+            {" "}
+            <span className="navbar-hover-underline">How it works</span>
+          </li>
+          <li className="cursor-pointer">
             <span className="navbar-hover-underline">Product ✨</span>
           </li>
           <li className="cursor-pointer">

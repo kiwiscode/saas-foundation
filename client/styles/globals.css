@@ -288,3 +288,26 @@ a {
     line-height: 160%;
   }
 }
+
+.marquee {
+  will-change: transform;
+  animation: marquee-- 44s linear infinite;
+  /* manipulate the speed of the marquee by changing "40s" line above*/
+}
+
+@keyframes marquee-- {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+img {
+  max-width: 100%;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+}
