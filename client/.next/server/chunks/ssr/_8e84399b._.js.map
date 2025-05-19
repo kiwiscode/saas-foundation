@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/kiwiscode/Desktop/next-fs/app/error.tsx"],"sourcesContent":["\"use client\"; // Error boundaries must be Client Components\n\nexport default function GlobalError({\n  error,\n  reset,\n}: {\n  error: Error & { digest?: string };\n  reset: () => void;\n}) {\n  return (\n    // global-error must include html and body tags\n    <html>\n      <body>\n        <h2>Something went wrong!</h2>\n        <button onClick={() => reset()}>Try again</button>\n      </body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA,cAAc,6CAA6C;;AAE5C,SAAS,YAAY,EAClC,KAAK,EACL,KAAK,EAIN;IACC,OACE,+CAA+C;kBAC/C,8OAAC;kBACC,cAAA,8OAAC;;8BACC,8OAAC;8BAAG;;;;;;8BACJ,8OAAC;oBAAO,SAAS,IAAM;8BAAS;;;;;;;;;;;;;;;;;AAIxC","debugId":null}},
-    {"offset": {"line": 50, "column": 0}, "map": {"version":3,"sources":["file:///Users/kiwiscode/Desktop/next-fs/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-ssr'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
-}

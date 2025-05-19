@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/kiwiscode/Desktop/projects/Trend-app/client/components/ui/Hero.tsx"],"sourcesContent":["const Hero = () => {\n  return <div className=\"w-full\">Hero section</div>;\n};\n\nexport default Hero;\n"],"names":[],"mappings":";;;;;AAAA,MAAM,OAAO;IACX,qBAAO,6LAAC;QAAI,WAAU;kBAAS;;;;;;AACjC;KAFM;uCAIS","debugId":null}},
-    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["file:///Users/kiwiscode/Desktop/projects/Trend-app/client/app/page.tsx"],"sourcesContent":["\"use client\";\n\nimport Hero from \"@/components/ui/Hero\";\n\nexport default function Home() {\n  return (\n    <div>\n      <Hero />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,6LAAC;kBACC,cAAA,6LAAC,4HAAA,CAAA,UAAI;;;;;;;;;;AAGX;KANwB","debugId":null}}]
-}

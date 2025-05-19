@@ -161,3 +161,130 @@ a {
 .navbar-hover-underline {
   @apply block relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 hover:after:w-full;
 }
+
+/* h1 style landing page */
+.div-block-268 {
+  width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .div-block-268 {
+    width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .div-block-268,
+  .div-block-268:lang(tr) {
+    width: 457px;
+  }
+}
+
+/* hero header */
+@media screen and (min-width: 1440px) {
+  .hero_header {
+    letter-spacing: -2px;
+    font-size: 95px;
+  }
+}
+
+.hero_header {
+  color: black;
+  text-align: center;
+  letter-spacing: -2px;
+  -webkit-text-stroke-color: black;
+  text-transform: uppercase;
+  flex: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 24px;
+  font-size: 95px;
+  font-weight: 1000;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 991px) {
+  .hero_header {
+    text-align: center;
+    width: 100%;
+    font-size: 95px;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero_header {
+    text-align: center;
+    align-self: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-size: 60px;
+  }
+}
+
+.div-block-267 {
+  z-index: -1;
+  background-color: #f5da2a;
+  border-radius: 16px;
+  width: 664px;
+  height: 108px;
+  position: absolute;
+  inset: 42% auto auto 5%;
+  transform: rotate(-2.91deg);
+}
+
+@media screen and (max-width: 991px) {
+  .div-block-267 {
+    width: 645px;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .div-block-267 {
+    width: 440px;
+    height: 70px;
+    top: 37%;
+    left: 3%;
+  }
+}
+
+.hero_description {
+  text-align: center;
+  text-shadow: none;
+  width: 625px;
+  max-width: 100%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-right: 0;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+@media screen and (max-width: 991px) {
+  .hero_description {
+    text-shadow: none;
+    width: 540px;
+    max-width: 100%;
+    padding-right: 0;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero_description {
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
+    line-height: 160%;
+  }
+}

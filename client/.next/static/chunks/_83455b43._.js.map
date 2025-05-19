@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/kiwiscode/Desktop/projects/Trend-app/client/app/%28routes%29/%28dashboard%29/profile/%5Bid%5D/page.tsx"],"sourcesContent":["\"use client\";\n\nimport React from \"react\";\nimport { useParams } from \"next/navigation\";\n\nconst Page = () => {\n  const { id } = useParams();\n\n  console.log(\"id received from params:\", id);\n  return <div>{id}</div>;\n};\n\nexport default Page;\n"],"names":[],"mappings":";;;;AAGA;;;AAHA;;AAKA,MAAM,OAAO;;IACX,MAAM,EAAE,EAAE,EAAE,GAAG,CAAA,GAAA,qIAAA,CAAA,YAAS,AAAD;IAEvB,QAAQ,GAAG,CAAC,4BAA4B;IACxC,qBAAO,6LAAC;kBAAK;;;;;;AACf;GALM;;QACW,qIAAA,CAAA,YAAS;;;KADpB;uCAOS","debugId":null}},
-    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file:///Users/kiwiscode/Desktop/projects/Trend-app/client/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0],"debugId":null}}]
-}

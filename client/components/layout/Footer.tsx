@@ -44,7 +44,7 @@ const Footer = () => {
   return (
     <>
       {/* footer */}
-      <footer className="border-t-2 p-4">
+      <footer className="border-t-2 p-4 mt-[90px]">
         <div className="mt-20 flex flex-col md:flex-row max-md:gap-10 justify-center items-start gap-[180px] max-lg:gap-[100px] font-regular-title-regular">
           <div className="flex flex-col items-center gap-3 w-full md:w-auto max-md:order-2">
             <p className="text-center m-0">GIVE AN EMAIL, GET THE NEWSLETTER</p>

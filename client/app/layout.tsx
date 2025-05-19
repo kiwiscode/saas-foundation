@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import { UserTypeProvider } from "@/context/UserTypeContext";
 
 export const metadata: Metadata = {
   title: "Invoice Ease",
@@ -16,10 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <UserTypeProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </UserTypeProvider>
       </body>
     </html>
   );
 }
+
+

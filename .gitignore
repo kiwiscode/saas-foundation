@@ -15,7 +15,11 @@ node_modules*
 
 # next.js
 /.next/
+.next*
 /out/
+./client/.next
+./cms/.next
+
 
 # production
 /build
@@ -41,3 +45,5 @@ yarn-error.log*
 next-env.d.ts
 
 .vscode*
+
+
